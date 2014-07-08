@@ -8,3 +8,8 @@ I'm Nicholas Weber. I grew up here in the northwest. I went off to Minnesota to 
 
 I've been playing around with code since last year when I was learning VBA because I was going deeper in depth with MS Excel. I'm excited to be here and learning more about JavaScript.
 
+Activities I Enjoy:
+* Board Games 
+* Hiking
+* Climbing
+* Making Music
