@@ -1,1 +1,0 @@
-I am a student in the Javascript Foundations II. 

@@ -1,1 +1,0 @@
-# My name is Jostein (Joe) Barry-Straume
