@@ -1,3 +1,4 @@
-My name is Arielle. I am 24 years old and my favorite color is green. 
-I really like to read, run, and cook. I graduated from Whitman College in 2012 with a degree in biology. 
-I love JavaScript and I would really like to eventually work as a software developer.
+# Codefellows Javascript Foundations Night Course
+ Welcome to the CodeFellows Foundations 2 Javascript Night Course!
+ This repository will be how homework is turned in.
+ Have a look at the textbook for the course: http://hankyates.github.io/F2-javascript-textbook/
