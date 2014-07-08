@@ -1,1 +1,4 @@
-#Create a folder with your name here!
+# JARROD MEDRANO
+### ABOUT ME
+
+HI MY NAME IS JARROD MEDRANO
