@@ -1,1 +1,3 @@
-Livingston Martin Readme Demo File
+Livingston Martin ReadMe
+I'm a 23 years old, have a biology degree from Whitman college. 
+I'm learing JavaScript. 
