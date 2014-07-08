@@ -1,5 +1,5 @@
 # Codefellows Javascript Foundations Night Course
- ## Welcome to the CodeFellows Foundations 2 Javascript Night Course!
+## Welcome to the CodeFellows Foundations 2 Javascript Night Course!
  
  This repository will be how homework is turned in.
  
