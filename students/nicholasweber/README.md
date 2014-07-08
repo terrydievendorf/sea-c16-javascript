@@ -6,5 +6,5 @@
 
 I'm Nicholas Weber. I grew up here in the northwest. I went off to Minnesota to grad school and returned to Washington when I was finished. I'm glad to be back (even with the rain). I'm working for REI and as a private tutor.
 
-I've been playing around with code since last year when I was learning VBA because I was going deeper in depth with MS Excel.
+I've been playing around with code since last year when I was learning VBA because I was going deeper in depth with MS Excel. I'm excited to be here and learning more about JavaScript.
 
