@@ -1,0 +1,18 @@
+var firstName;
+var lastName;
+
+function preferredName(firstName, lastName) {
+
+  if (firstName && lastName) {
+    return 'false';
+  }
+  else if (firstName && !lastName) {
+    return this.firstName;
+  }
+  else if (!firstName && lastName) {
+    return this.lastName;
+  }
+  else if (!firstName && !lastName) {
+    return 'false';
+  }
+}
