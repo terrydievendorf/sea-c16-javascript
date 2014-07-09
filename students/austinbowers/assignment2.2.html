@@ -9,23 +9,23 @@
     } else {
       return false;
     }
-  }
+  };
 
-console.log(preferredName(firstName, lastName));
-// -> false
+  console.log(preferredName(firstName, lastName));
+  // -> false
 
-firstName = 'Hank';
+  firstName = 'Hank';
 
-console.log(preferredName(firstName, lastName));
-// -> 'Hank'
+  console.log(preferredName(firstName, lastName));
+  // -> 'Hank'
 
-lastName = 'Yates';
+  lastName = 'Yates';
 
-console.log(preferredName(firstName, lastName));
-// -> false
+  console.log(preferredName(firstName, lastName));
+  // -> false
 
-firstName = '';
+  firstName = '';
 
-console.log(preferredName(firstName, lastName));
-// -> 'Yates'
+  console.log(preferredName(firstName, lastName));
+  // -> 'Yates'
 </script>
