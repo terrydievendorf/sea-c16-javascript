@@ -3,7 +3,7 @@ var preferredName = function(firstName, lastName) {
     return console.log("Uh, something's wrong, both inputs should be strings (even if blank).");
   }
 
-  else if ((!firstName && !lastName)) || (!!firstName && !!lastName)) {
+  else if ((!firstName && !lastName) || (!!firstName && !!lastName)) {
       return false;
   }
   
