@@ -1,0 +1,1 @@
+i'm a designer looking to transition into a front-end developer.
