@@ -3,7 +3,7 @@ var person = function(name,age,parentsName) {
 	this.age = age;
 	this.parentsName = parentsName;
 	this.isDead = function () {
-		if (typeof(this.age) == 'number' && this.age.length > 0) {
+		if (typeof(this.age) == 'number') {
 			return true;
 		} else {
 			return false;
