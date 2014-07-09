@@ -9,5 +9,8 @@ This is scott a human person
   <li>Mercutio</li>
   <li>daenerys</li>
   <li>Thekingoftheblacknesswhereriversarelove</li>
+  <li>Kraken</li>
+</ul>
+![image](kraken.jpg)
 
 </md>
