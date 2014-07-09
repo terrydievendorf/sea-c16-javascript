@@ -1,32 +1,28 @@
-<script>
-
-
 
 var preferredName = function(FirstName, LastName) {
 	if (FirstName && LastName) {
-		console.log(false)
+		return false
 	}
 	else if (FirstName && !LastName) {
-		console.log(FirstName)
+		return FirstName
 	}
 	else if (LastName && !FirstName) {
-		console.log(LastName)
+		return LastName
 	}
 
-	else {console.log(false)};
+	else { return false};
 
 	}
 var FirstName,
     LastName;
 
-preferredName(FirstName, LastName)
+console.log(preferredName(FirstName, LastName));
 
 Fname = preferredName("Brent", LastName);
-Fname;
+console.log(Fname);
 
 Lname = preferredName(FirstName, "Parrish");
-Lname
+console.log(Lname);
 
-preferredName(FirstName, LastName)
+console.log(preferredName(FirstName, LastName));
 
-</script>
