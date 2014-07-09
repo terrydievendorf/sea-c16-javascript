@@ -1,7 +1,7 @@
-function preferredName(arg1, arg2) {
-    if(!!arg1 == !!arg2) {
+function preferredName(firstName, lastName) {
+    if(!!firstName == !!lastName) {
         return false;
     } else {
-        return arg1 || arg2;
+        return firstName || lastName;
     }
 }
