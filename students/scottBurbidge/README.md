@@ -11,6 +11,5 @@ This is scott a human person
   <li>Thekingoftheblacknesswhereriversarelove</li>
   <li>Kraken</li>
 </ul>
-![image](kraken.jpg)
 
 </md>
