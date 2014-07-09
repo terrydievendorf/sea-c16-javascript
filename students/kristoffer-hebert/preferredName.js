@@ -1,5 +1,4 @@
 (function () {
-
     'use strict';
 
     var Person,
@@ -9,6 +8,7 @@
 
     Person = function (first, last) {
         var self = this;
+
         self.first = first;
         self.last = last;
         self.isValidUsername = function () {
