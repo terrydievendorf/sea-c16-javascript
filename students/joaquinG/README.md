@@ -1,4 +1,4 @@
-#My Codefellows Folder | JavaScript
+#My Codefellows Folder 
 
 >Hi my name is **Joaquin** and I moved here recently from beautiful Colorado.
 >
