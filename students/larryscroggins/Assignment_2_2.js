@@ -1,22 +1,28 @@
 var FirstName, LastName;
+var preferredName = function () {
+  if(FirstName && LastName) return false;
+  if(!FirstName && !LastName) return false;
+  return FirstName || LastName;
+}
 
-    var preferredName = function(FirstName, LastName) {
-      if(FirstName && LastName) {
-        console.log(false);
-        return false;
-      }
-      else if(!FirstName && LastName) {
-        console.log(LastName);
-        return LastName;
-      }
-      else if(FirstName && !LastName) {
-        console.log(FirstName);
-        return FirstName;
-      }
-      else if("" && LastName) {
-        console.log(LastName);
-        return LastName;
-      }
-    }
+preferredName(FirstName, LastName);
+console.log(preferredName());
+// -> false
 
-  preferredName("Larry", "Scroggins");
+FirstName = 'Hank';
+
+preferredName(FirstName, LastName);
+console.log(preferredName());
+// -> 'Hank'
+
+LastName = 'Yates';
+
+preferredName(FirstName, LastName);
+console.log(preferredName());
+// -> false
+
+FirstName = '';
+
+preferredName(FirstName, LastName);
+console.log(preferredName());
+// -> 'Yates'
