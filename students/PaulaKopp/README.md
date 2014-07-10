@@ -1,0 +1,1 @@
+I'm new to coding. I have a Master's in Education (taught Middle School Science), have done medical research at the UW and, most recently, ran my own business. I entered Foundations1 as 'zero' and now I'm maybe at 33%? Things are just starting to come together and make sense to me. I'm really enjoying learning something new and looking forward to this career change.   
