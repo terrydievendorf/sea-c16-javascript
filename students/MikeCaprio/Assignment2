@@ -1,0 +1,18 @@
+var Person = function(name,age){
+  this.name=name;
+  this.age=age;
+  this.isDead = function(){
+    if (this.age > 115 || !this.age) {
+    alert("This person is dead :(")
+    return true;
+    }
+    else return false;
+  }
+  this.isAlive = function(){
+    if (this.age >= 0 && this.age <=115) {
+    alert("This person is alive :)")
+    return true;
+    }
+    else return false;
+  }
+}
