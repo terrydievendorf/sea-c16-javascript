@@ -1,5 +1,5 @@
 function preferredName (FirstName, LastName) {
-    if (!!(FirstName && LastName)) {
+    if (!!(FirstName && LastName) || (!FirstName && !LastName)) {
       return false;
     }
     else {
