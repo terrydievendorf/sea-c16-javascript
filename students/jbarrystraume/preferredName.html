@@ -1,0 +1,31 @@
+<script>
+	var FirstName, LastName;
+
+	function preferredName(FirstName, LastName) {
+		if (FirstName && !LastName) {
+			return FirstName;
+		}
+		if (!FirstName && LastName) {
+			return LastName;
+		}
+		return false;
+	}
+
+	console.log(preferredName(FirstName, LastName));
+	// -> false
+
+	FirstName = 'Jostein';
+
+	console.log(preferredName(FirstName, LastName));
+	// -> 'Jostein'
+
+	LastName = 'Barry-Straume';
+
+	console.log(preferredName(FirstName, LastName));
+	// -> false
+
+	FirstName = '';
+
+	console.log(preferredName(FirstName, LastName));
+	// -> 'Barry-Straume'
+</script>
