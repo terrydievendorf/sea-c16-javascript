@@ -7,7 +7,11 @@ var Person = function(name, parentName, age) {
 Person.prototype = {
     
     isDead: function() {
-        return (!this.age) ? true : false;
+        return (!this.age || this.age > 115) ? true : false;
+    },
+    
+    isAlive: function() {
+        return (this.age < 115 && this.age) ? true : false;
     }
     
 };
