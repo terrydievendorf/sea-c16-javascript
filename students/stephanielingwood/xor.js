@@ -1,15 +1,3 @@
-var preferredName = function (FirstName,LastName) {
-    if (FirstName && !LastName) {
-        return FirstName
-    }
-    else if (!FirstName && LastName) {
-        return LastName
-    }
-    else if (FirstName && LastName) {
-        return false;
-    }
-    else {
-    }
+var preferredName = function (firstName,lastName) {
+  return !!firstName === !!lastName ? false : (firstName ? firstName : lastName);
 }
-
-preferredName("Steph","Lingwood");
