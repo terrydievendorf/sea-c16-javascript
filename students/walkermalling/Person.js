@@ -13,7 +13,7 @@ var Person = function(name,parent,age) {
 	}
 
 	// warning
-	if(this.isDead() || this.isOrphan() || !!!this.name)
+	if(this.isDead() || this.isOrphan() || !this.name)
 		console.log('You\'ve created a monster!');
 	else
 		console.log(this);
