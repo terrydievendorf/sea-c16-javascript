@@ -4,6 +4,6 @@ var preferredName = function(firstName, lastName) {
   }
 
   else { 
-    return ((!firstName && !lastName) || (!!firstName && !!lastName)) ? false : (!!firstName || !!lastName)    
+    return ((!firstName && !lastName) || (!!firstName && !!lastName)) ? false : (firstName || lastName)    
   }
 }
