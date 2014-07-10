@@ -1,7 +1,8 @@
-// This instantiates the person object
-var Person = function( name, parentName, age) {
-	console.log ("Person made with name " name ", age " age);
-	this.name = name;
+// Instantiates the person object
+var Person = function( firstName, lastName, parentName, age) {
+	console.log ("Person made with name " + firstName + " " + lastName + ", age " + age);
+	this.firstName = firstName;
+	this.lastName = lastName;
 	this.parentName = name;
 	this.age = age;
 };
