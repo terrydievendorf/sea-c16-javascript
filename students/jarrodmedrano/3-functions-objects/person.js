@@ -10,9 +10,9 @@ var Person = function(fname, parentname, age) {
     }
 	this.isDead = function() {
 		if(this.age >= 115 && this.age < -1 ) {
-			return this.fname + " is probably dead";
+			return true;
 		} else {
-			return this.fname + " is probably alive";
+			return false;
 		}
 	}
 }
