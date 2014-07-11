@@ -3,6 +3,6 @@ var Person = function(inputName, inputParentName, inputAge) {
   this.parent = inputParentName;
   this.age = inputAge;
   this.isDead = function() {
-    return (this.age && this.age > 115);
+    return !!(!this.age || this.age > 115);
   }
 }
