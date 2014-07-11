@@ -7,7 +7,6 @@ function Person(name, parentName, age) {
 		else {return false}
 	}
 	this.isAlive = function() {
-		if (this.age > 0 && this.age <= 114) {return true}
-		else {return false}
+		return !this.isDead();
 	}
 }
