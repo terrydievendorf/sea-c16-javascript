@@ -1,4 +1,4 @@
-
+//Work in progress.
 var seperator = function(input,filter) {
 	input = [];
 	for (var i = 0; i <= input.length; i++) {
