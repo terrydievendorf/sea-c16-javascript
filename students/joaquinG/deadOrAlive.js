@@ -21,12 +21,3 @@ function Person(name, age, parent) {
         }
     };
 }
-//test cases
-var person1 = new Person("Bob", 45, "Brother Bear");
-var person2 = new Person("Bugs", 122);
-var person3 = new Person("Scarface", 124);
-
- 
-console.log(person1.sayHi() + " " + person1.isAlive());
-console.log(person2.sayHi() + " " + person2.isAlive());
-console.log(person3.sayHi() + " " + person3.isDead());
