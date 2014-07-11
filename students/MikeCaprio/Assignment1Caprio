@@ -7,8 +7,11 @@
 //It is a lot smaller - but still not nearly as intuitive for me as using the if/else logic.
 
 function preferredName(firstName, lastName) {
-  return (!firstName == !lastName) ? false : (firstName || lastName);
+  return (!firstName === !lastName) ? false : (firstName || lastName);
   }
+  
+// == vs ===: No reason in this case - just more familiar with '==' although the internet tells me '==='
+//will always evaluate faster due to lack of type conversion so I changed it.
 
 //Check if first and last name variables both evaluate to the same truth value (such that
 //if both are "false" (in this case both have valid assignments) they return the ternary
