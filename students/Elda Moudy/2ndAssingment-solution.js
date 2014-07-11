@@ -1,7 +1,7 @@
 function Person (name, parentName, optionalAge) {
 	this.name = name;
 	this.parentName = parentName;
-	this.optionalAge = age;
+	this.age = optionalAge;
 	this.isDead = function () {
 		if (0 >= this.age >= 120) {
 			console.log(this.name + " is NOT alive");
