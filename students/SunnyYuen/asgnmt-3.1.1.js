@@ -11,19 +11,8 @@ var Person = function(name, parentName, age) {
 
 };
 
-//method to see if the person is dead
-//assuming 114 is the oldest age possible and 0 is unborn
-Person.prototype.isDead = function() {
-   if (this.age > 114 || this.age <= 0) {
-      return true;
-    } else {
-      return false;
-    }};
-
-//same assumptions as above
-Person.prototype.isLive = function() {
-   if (0 < this.age < 115) {
-      return true;
-    } else {
-      return false;
-    }};
+// creates the isDead & isLive function properties for all Person instances
+Person.prototype = {
+  isDead: function() {return (this.age > 114 || this.age <= 0) ? true : false; },
+  isLive: function() {return (this.age > 0 && this.age < 115) ? true : false; }
+};
