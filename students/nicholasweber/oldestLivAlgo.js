@@ -37,7 +37,7 @@ var peopleLength = people.length;
 var oldestLivingParent = function(arr) {
 
   //isParent finds who are parents and pushes it to the array parentList   
-  var parentList = []
+  var parentList = [];
   var isParent = function(arr) {
     for (i = 0; i < peopleLength; i++){
       if (arr[i].hasOwnProperty("parent")) {
