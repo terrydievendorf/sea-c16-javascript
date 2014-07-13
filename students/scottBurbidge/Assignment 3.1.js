@@ -4,16 +4,10 @@ var Person = function (name, parent, age, parentAge) {
   this.age = age;
   this.parentAge = parentAge;
   this.ageCheck = function (age, parentAge) {
-    if (!this.age) {
+    if (!this.age || this.age > 150 || this.age >=     this.parentAge) {
       return false;
     } else {
-      if (this.age > 150) {
-        return false;
-      } else if (this.age >= this.parentAge) {
-        return false;
-      } else if (this.age <= 100) {
-        return true;
-      }
+      return true;
     }
   };
 };
