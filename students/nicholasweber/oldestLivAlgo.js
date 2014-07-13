@@ -35,6 +35,7 @@ var people = [
 var peopleLength = people.length;
 var oldestLivingParent = function(arr) {
   var parentList = []
+  
   var isParent = function(arr) {
     for (i = 0; i < peopleLength; i++){
       if (arr[i].hasOwnProperty("parent")) {
@@ -42,6 +43,7 @@ var oldestLivingParent = function(arr) {
       }
     }
   };
+
   var findOldest = function(arr) {
     var oldestAge = 0;
     var oldestPerson;
@@ -55,6 +57,7 @@ var oldestLivingParent = function(arr) {
     }
     return oldestPerson;
   };
+
   isParent(people);
   console.log(findOldest(people));
 };
