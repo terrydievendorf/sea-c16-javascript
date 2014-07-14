@@ -7,4 +7,3 @@ stringDelimiter = function(sampleInput, stringSeparator) {
 }
 
 stringDelimiter(sampleInput, '$');
-// -> ['asdf', 'lskd1234', 'asdo']
