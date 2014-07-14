@@ -23,6 +23,3 @@ var Person = function(name, parent, age) {
         return true;
       }
   };
-
-  var person1 = new Person('Tom','Bill',-5);
-  person1.isDead();
