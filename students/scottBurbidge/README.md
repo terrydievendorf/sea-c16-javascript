@@ -6,5 +6,5 @@
   - Sophie
   - Mercutio
   - daenerys
-  - Thekingofthe~~lightness~~blacknesswhereriversarelove
+  - Thekingofthe ~~lightness~~ blacknesswhereriversarelove
   - Kraken
