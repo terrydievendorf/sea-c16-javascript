@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script>
+    function preferredName(firstname,lastname) {
+      if (firstname && !lastname) return firstname;
+      if (lastname && !firstname) return lastname;
+      return false;
+    };
+    var firstname;
+    var lastname;
+    console.log(preferredName(firstname,lastname));
+    console.log(preferredName('Terry',''));
+    console.log(preferredName('','Dievendorf'));
+    console.log(preferredName('',''));
+    console.log(preferredName('Terry','Dievendorf'));
+  </script>
+</head>
+<body>
+</body>
+</html>

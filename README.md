@@ -6,4 +6,10 @@ This repository will be how homework is turned in.
 
 Have a look at the textbook for the course: http://hankyates.github.io/F2-javascript-textbook/
 
-And joing the chatroom for the class: https://gitter.im/codefellows/sea-c16-javascript
+And join the chatroom for the class: https://gitter.im/codefellows/sea-c16-javascript
+
+If you're unfamiliar with the command line or want a refresher check out this introductory tutorial: http://code.tutsplus.com/tutorials/the-command-line-is-your-best-friend--net-30362
+
+For learning fundamentals, an excellent tool is: http://www.codewars.com/
+
+For learning Git, the introductory docs are a great place to start: http://git-scm.com/documentation
