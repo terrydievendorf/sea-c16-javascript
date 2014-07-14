@@ -19,5 +19,8 @@ var Person = function (name, parent_name, age) {
  	 	}
  	};
  };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> FETCH_HEAD
