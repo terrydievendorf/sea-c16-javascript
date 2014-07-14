@@ -9,9 +9,9 @@ function verifyAge (age) {
 }
 
 Person.prototype.isDead = function () {
-  return verifyAge(this.age) ? true : false;
+  return verifyAge(this.age);
 };
 
 Person.prototype.isAlive = function () {
-  return verifyAge(this.age) ? false : true;
+  return !verifyAge(this.age);
 };
