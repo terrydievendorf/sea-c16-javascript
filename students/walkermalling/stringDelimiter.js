@@ -13,7 +13,7 @@ var stringDelimiter = function(string, delimiter){
 	var conductor = {
 		collection : '',
 		add: function(char){
-			if(char===delimiter||!!!char) this.dump();
+			if(char===delimiter || !char) this.dump();
 			else this.collection += char;
 		},
 		dump: function(){
