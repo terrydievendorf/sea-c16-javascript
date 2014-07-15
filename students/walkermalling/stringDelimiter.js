@@ -9,7 +9,6 @@ var stringDelimiter = function(string, delimiter){
 	arr = [];
 
 	// delimit
-	// 
 	var conductor = {
 		collection : '',
 		add: function(char){
