@@ -4,13 +4,11 @@
 function stringDelimiter(input, delimiter) {
 	var output = [];
 	var str = "";
-	var j = 0;
 
 	for (var i = 0; i < input.length; i ++) {
 		if (input[i] === delimiter) {
             if (str !== "") { //prevents adding an empty string to the output array
-                output[j] = str;
-			    j ++;
+                output.push(str);
 			    str = "";
             }
 		} else {
