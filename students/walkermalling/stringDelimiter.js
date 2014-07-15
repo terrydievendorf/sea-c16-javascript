@@ -6,16 +6,25 @@ var stringDelimiter = function(string, delimiter){
 	// validate
 	if( !string ) throw new UserException("NoStringToDelimit");
 
+	arr = [];
+
 	// delimit
-	var delimit = [-1];
-
-	for(var k = 0; k < string.length; k++){
-		if( string[k] === delimiter ) delimit.push(k); // grab position of delimiters
+	// 
+	var conductor = {
+		collection : '',
+		add: function(char){
+			if(char===delimiter||!!!char) this.dump();
+			else this.collection += char;
+		},
+		dump: function(){
+			arr.push(this.collection);
+			this.collection = '';
+		}
 	}
 
-	for(var q = 0; q < delimit.length; q++){
-		delimit[q] = string.slice( delimit[q] + 1, delimit[q+1] ); // slice given string
+	for(var k = 0; k <= string.length; k++){
+		conductor.add(string[k]);
 	}
 
-	return delimit;
+	return arr;
 }
