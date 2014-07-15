@@ -1,16 +1,23 @@
 var stringDelimiter = function(string, delimiter){
-	this.string = string;
+	// construct
+	this.string = typeof string === "string" ? string : false;
 	this.delimiter = delimiter || ' ';
-	var arr = [];
-	var currentSlice = "";
-	for(var k = 0; k < this.string.length; k++){
-		if(this.string[k] === this.delimiter){
-			arr.push( currentSlice );
-			currentSlice = "";
-		} else {
-			currentSlice += this.string[k];
-		}
+
+	// validate
+	if( !this.string ){
+		throw new UserException("NoStringToDelimit");
 	}
-	if(currentSlice !== "") arr.push(currentSlice);
-	return arr;
+
+	// delimit
+	var delimit = [-1];
+	
+	for(var k = 0; k < this.string.length; k++){
+		if( this.string[k] === this.delimiter ) delimit.push(k); // grab position of delimiters
+	}
+
+	for(var q = 0; q < delimit.length; q++){
+		delimit[q] = this.string.slice( delimit[q] + 1, delimit[q+1] ); // slice given string
+	}
+
+	return delimit;
 }
