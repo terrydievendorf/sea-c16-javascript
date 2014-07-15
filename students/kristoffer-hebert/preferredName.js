@@ -1,37 +1,15 @@
 (function () {
     'use strict';
 
-    var Person,
-        person1,
-        person2,
-        person3;
+    var preferredName,
+        FirstName,
+        LastName;
 
-    Person = function (first, last) {
-        var self = this;
-
-        self.first = first;
-        self.last = last;
-        self.isValidUsername = function () {
-
-            if ((self.first && self.last) || self.first) {
-                if (self.last) {
-                    console.log('Welcome ' + self.first + ' ' + last);
-                } else {
-                    console.log('Welcome ' + self.first + ' Please provide a last name');
-                }
-                return true;
-            }
-            console.log('Invalid preferred name');
+    preferredName = function (FirstName, LastName) {
+        if ((FirstName && LastName) || (!FirstName && !LastName)) {
             return false;
-        };
+        }
+        return FirstName || LastName;
     };
-
-    person1 = new Person(null, 'Hebert');
-    person2 = new Person('Kristoffer', 'Hebert');
-    person3 = new Person('Kristoffer', null);
-
-    person1.isValidUsername();
-    person2.isValidUsername();
-    person3.isValidUsername();
 
 }());
