@@ -7,5 +7,5 @@ var stringDelimiter = function(input, delimiter) {
     var result =  input.match(regexp);
 
     // Return false instead of null if there are no matches.
-    return result === false ? [] : result;
+    return result === null ? false : result;
 };
