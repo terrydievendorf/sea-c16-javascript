@@ -1,9 +1,8 @@
-var input = 'asdf$lskd1234$asdo$$$';
 stringDelimiter = function(input, chopPoint) {
 	var array = [];
 	var outputStr = ""; 
 	for(i = 0; i <= input.length; i++) {
-		if (input[i] === "$") {
+		if (input[i] === chopPoint) {
 			if (outputStr !== "") {
 				array.push(outputStr);
 				outputStr = "";
@@ -16,5 +15,4 @@ stringDelimiter = function(input, chopPoint) {
 	console.log(array);
 }
 
-stringDelimiter(input, "$");
-// -> ['asdf', 'lskd1234', 'asdo']
+//stringDelimiter('asdf$lskd1234$asdo$$$', "$");
