@@ -4,4 +4,4 @@
 >
 >I know **HTML5** and **CSS** if anybody needs help.
 >
->[Visit my site](www.betwinsouls.com/blog) 
+>* Check out my site: [http://www.betwinsouls.com](http://www.betwinsouls.com/) 
