@@ -1,0 +1,21 @@
+//So I took the suggestion to look at Ternary Operators:
+//http://msdn.microsoft.com/en-us/library/ie/be21c7hw(v=vs.94).aspx
+
+//I also checkedout out other students submissions (especially Jeff's:
+//https://github.com/codefellows/sea-c16-javascript/commit/2ae56439eb579230f02174a8ec3eb3fe4f55a0e6)
+
+//It is a lot smaller - but still not nearly as intuitive for me as using the if/else logic.
+
+function preferredName(firstName, lastName) {
+  return (!firstName === !lastName) ? false : (firstName || lastName);
+  }
+  
+// == vs ===: No reason in this case - just more familiar with '==' although the internet tells me '==='
+//will always evaluate faster due to lack of type conversion so I changed it.
+
+//Check if first and last name variables both evaluate to the same truth value (such that
+//if both are "false" (in this case both have valid assignments) they return the ternary
+//true which give us the ultimate result of false (expression1). If both are "true" (do not have valid
+//assignments) they are still the same and return the ultimate result of false. Finally
+//if the first and last names have different truth values (exclusive OR) we recieve a ternary
+//false and return whichever has a valid assignment (expression2).

@@ -1,0 +1,1 @@
+Hi, my name is Angelo. I have experience programming in the Java language, but I am looking to transition to Javascript. I aspire to develop robust web apps. I currently work in a credit union and I am looking for a career change.
