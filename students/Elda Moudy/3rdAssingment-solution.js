@@ -9,6 +9,7 @@ function stringDelimiter(sampleString, separator) {
 		}	else {
 			var newWord = word.join("");
 			finalWord.push(newWord);
+			word = [];
 			while (word.length > 0 ) {
 				word.pop();
 			};
