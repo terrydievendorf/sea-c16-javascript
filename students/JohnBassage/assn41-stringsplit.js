@@ -1,4 +1,4 @@
-var stringDel = function(str, delim) {
+var stringDelim = function(str, delim) {
     var output = new Array();
     output[0] = "";
     var stringNum = 0;
@@ -10,5 +10,5 @@ var stringDel = function(str, delim) {
             output[stringNum] = "";
         }
     }
-    console.log(output)
+    return output
 }
