@@ -7,7 +7,7 @@
     function countDecorator(func) {
         var newfunc = function () {
             newfunc.add();
-            return func(arguments[0],arguments[1]);
+            return func.apply(this, arguments);
         };
         newfunc.count = 0;
         newfunc.callCount = function () {
@@ -18,5 +18,4 @@
         };
         return newfunc;
     }
-
 }());
