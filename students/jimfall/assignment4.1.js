@@ -12,7 +12,6 @@ var stringDelimiter = function (sampleInput, delimiter) {
 			stringArray[j] += sampleInput.charAt(i);
 		}
 	}
-
 	for (var k = stringArray.length; k >= 0; k-- ) {
 		if (stringArray[k] === undefined) {
 			stringArray.splice(k, 1);
