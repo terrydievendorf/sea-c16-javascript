@@ -5,7 +5,7 @@ var Person = function (name, parent, age) {
 		return (!!age);
 	};
 	this.isAlive = function(){
-		return (age < 0 || age > 115) ? false : true;
+		return (!(age < 0) && !(age > 115));
 	};
 };
 
