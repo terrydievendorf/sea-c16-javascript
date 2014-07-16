@@ -12,4 +12,5 @@
     Person.prototype.isDead = function () {
         return (this.age && (this.age < 115) && (this.age > 0)) ? false : true;
     };
+
 }());
