@@ -1,15 +1,18 @@
-var sampleInput = 'asdf$lskd1234$asdo$$$';
+var sampleInput;
 var stringSeparator;
 var array = [];
 
 stringDelimiter = function(sampleInput, stringSeparator) {
   var match;
   for (i = 0; i <= sampleInput.length; i++) {
-    if (sampleInput.charAt(i) === '$') {
+    if (sampleInput.charAt(i) === stringSeparator) {
       var static = i;
-      array.push(sampleInput.substring(match, i));
+      var arrElement = sampleInput.substring(match, i);
+      if (arrElement !== "") {
+        array.push(arrElement);
+      }
       match = static+1;
     }
   }
-  array = array.filter(function(e) {return e});
+  return array;
 }
