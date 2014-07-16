@@ -1,5 +1,3 @@
-var inputString = "asdf$lskd1234$asdo$$$";
-
     var stringDelimiter = function (input, delimiter) {
         var output = [];
         var string = "";
@@ -17,4 +15,3 @@ var inputString = "asdf$lskd1234$asdo$$$";
         return output;
     };
 
-stringDelimiter(inputString, '$');
