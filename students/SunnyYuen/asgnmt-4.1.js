@@ -1,7 +1,7 @@
 //found '$' can not be used as a delimiter
 function makeList(str, delimiter) {
-    // pervents an empty array value if the delimiter is the 1st character of the string
-  (str.indexOf(delimiter) == 0) ? str = str.slice(1) : str = str;
+    // pervents an empty array value if the delimiter is @ 0 index of the string
+  if (str.indexOf(delimiter) === 0) {str = str.slice(delimiter.length);}
   var array = [];
     //define the delimiter to match
   var found = RegExp(delimiter, 'g');
@@ -11,8 +11,8 @@ function makeList(str, delimiter) {
     // match function has a .index property  
     var foundIndex = str.match(delimiter);
     var chunk = str.slice(0, foundIndex.index);
-    // slice str at +1 to skip over the delimiter
-    str = str.slice(foundIndex.index+1);
+    // slice str @ +length of delimiter to skip over the delimiter
+    str = str.slice(foundIndex.index+delimiter.length);
     array.push(chunk);
 }
 //adds the last chunk if not empty  
