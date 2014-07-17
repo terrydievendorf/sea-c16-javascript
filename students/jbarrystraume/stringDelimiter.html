@@ -3,23 +3,25 @@
 	var sampleInput = 'asdf$lskd1234$asdo$$$';
 
 	var stringDelimiter = function(input, divider) {
-		this.input = input.toString();
-		this.divider = divider;
-		this.arr = [];
-		this.output = '';
+		input = input.toString();
+		divider = divider.toString();
+		arr = [];
+		output = '';
 		
-		for (i = 0; i < this.input.length; i++) {
-			if (this.input[i] === this.divider) {
-				this.arr.push(this.output);
-				this.output = '';
+		for (i = 0; i < input.length; i++) {
+			if (input[i] === divider) {
+				if (output !== '') {
+					arr.push(output);
+				}
+				output = '';
 			}
-			if (this.input[i] !== this.divider) {
-				this.output += this.input[i];
-				if (i === this.input.length - 1) {
-					this.arr.push(this.output);
+			if (input[i] !== divider) {
+				output += input[i];
+				if (i === input.length - 1) {
+					arr.push(output);
 				}
 			}
 		}
-		return this.arr;
+		return arr;
 	}
 </script>
