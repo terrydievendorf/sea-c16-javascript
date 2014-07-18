@@ -1,8 +1,8 @@
-var countDecorator = function(Add){
+var countDecorator = function(fn){
 	var count = 0;
 	function decorator(){
 		count++;
-		return Add.apply(this,arguments);
+		return fn.apply(this,arguments);
 	}
 	decorator.callCount = function(){
 		return count;
