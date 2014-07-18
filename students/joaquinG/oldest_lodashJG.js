@@ -51,10 +51,10 @@ var living = function (people) {
 
 console.log(living(people));
 
-
 //function that returns the name of the oldest living person
 var oldestLivingPerson = function (people) {
-  return _.max(people, function (chr) {return chr.age;}).name;
+  return _.max(people, 'age').name;
 };
 
 console.log(oldestLivingPerson(people));
+
