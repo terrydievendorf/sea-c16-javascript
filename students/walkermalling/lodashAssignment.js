@@ -1,22 +1,29 @@
-var oldestAge = function(collection){
-    // filter out records with no age
-    var peopleWithAges = _.filter(collection,function(record){
-        return !!record.age;
+var filterPeople = function(collection, filter){
+    var newCollection = _.filter(collection,function(record){
+      return !!record[filter];
     });
+}
+
+var oldestPerson = function(collection){
+    // filter out records with no age
+    var peopleWithAges = filterPeople(collection,'age');
 
     // find record with oldest age
-    var oldestAge = _.max(collection,function(record){
+    var oldest = _.max(collection,function(record){
         return record.age;
     });
 
-    return oldestAge.age;
+    return oldest;
+}
+
+var oldestAge = function(collection){
+   var oldest = oldestPerson(collection);
+   return oldest.age;   
 }
 
 var livingPeople = function(collection){
     // filter out people with no age
-    var living = _.filter(collection,function(record){
-        return !!record.age;
-    });
+    var living = filterPeople(collection,'age');
 
     // get their names
     var names = _.pluck(living,'name');
@@ -26,15 +33,6 @@ var livingPeople = function(collection){
 
 
 var oldestLivingPerson = function(collection){
-    // filter out people with no age
-    var peopleWithAges = _.filter(collection,function(record){
-        return !!record.age;
-    });
-
-    // find person with oldest age
-    var oldestPerson = _.max(peopleWithAges,function(record){
-      return record.age;
-    });
-
-    return oldestPerson.name;
+    var oldest = oldestPerson(collection);
+    return oldest.name;
 }
