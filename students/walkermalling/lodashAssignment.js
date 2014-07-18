@@ -5,12 +5,11 @@ var oldestAge = function(collection){
     });
 
     // find record with oldest age
-    var oldestAge = -1;
-    for(var k = 0; k < peopleWithAges.length; k++){
-      if ( peopleWithAges[k].age > oldestAge ) oldestAge = peopleWithAges[k].age;
-    }
+    var oldestAge = _.max(collection,function(record){
+        return record.age;
+    });
 
-    return oldestAge;
+    return oldestAge.age;
 }
 
 var livingPeople = function(collection){
@@ -20,9 +19,7 @@ var livingPeople = function(collection){
     });
 
     // get their names
-    var names = _.map(living,function(record){
-      return record.name;
-    });
+    var names = _.pluck(living,'name');
 
     return names;
 }
@@ -35,12 +32,9 @@ var oldestLivingPerson = function(collection){
     });
 
     // find person with oldest age
-    var oldestPerson = { age : -1 };
-    for(var k = 0; k < peopleWithAges.length; k++){
-        if ( peopleWithAges[k].age > oldestPerson.age ){
-            oldestPerson = peopleWithAges[k];
-        }
-    }
+    var oldestPerson = _.max(peopleWithAges,function(record){
+      return record.age;
+    });
 
     return oldestPerson.name;
 }
