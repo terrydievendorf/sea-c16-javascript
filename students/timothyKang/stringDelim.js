@@ -11,11 +11,6 @@ var stringDelimiter = function (sampleInput, separator) {
             beginArray = i + 1;
         }
     }
-    console.log(stringArray);
+    return stringArray;
 }
-var sampleInput = 'asdf$lskd1234$asdo$$$';
-stringDelimiter(sampleInput, '$');
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD

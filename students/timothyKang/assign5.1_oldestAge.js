@@ -24,9 +24,12 @@ function oldestLivingPerson(people) {
 	var result = _.values(newOld);
 	return result.toString();
 }
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> FETCH_HEAD
