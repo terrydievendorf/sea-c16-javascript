@@ -15,3 +15,7 @@ var stringDelimiter = function (sampleInput, separator) {
 }
 var sampleInput = 'asdf$lskd1234$asdo$$$';
 stringDelimiter(sampleInput, '$');
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
