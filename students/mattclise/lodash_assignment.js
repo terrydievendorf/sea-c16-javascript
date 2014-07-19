@@ -37,7 +37,7 @@ var people = [
 
 
 var oldestAge = function(people) {
-  return _.max(_.pluck(people, 'age'));
+  return _.max(people, 'age').age;
 }
 
 var living = function(people) {
@@ -48,6 +48,13 @@ var oldestLivingPerson = function(people) {
   var oldest = _.find(people, {'age': _.max(_.pluck(people, 'age'))});
   return oldest.name;
 }
+
+// The _.find method only works in the oldestLivingPerson function because there
+// is only one person who is the oldest age.  To get an array with all the names
+// of the people that are all the oldest age listed, I would use the following:
+//
+//  var oldest = _.where(people, {'age': _.max(_.pluck(people, 'age'))});
+//  return _.map(oldest, function(old){return old.name})
 
 console.log(oldestAge(people))
 console.log(living(people))
