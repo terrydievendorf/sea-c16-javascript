@@ -10,9 +10,10 @@
 
     function living(people) {
         var result;
-        result = _.filter(people, function (person) {
+        result = _.filter(people, function(person){
             return person.age;
         });
+        result = _.map(result, 'name');
         return result;
     }
     function oldestLivingPerson(people) {
