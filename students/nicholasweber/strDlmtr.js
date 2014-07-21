@@ -10,6 +10,6 @@ var stringDelimiter = function(stringInput, delimiter) {
     stringInput = stringInput.slice((sliceHere + 1), stringInput.length);
   }
 
-  return console.log(outputArr);
+  return outputArr;
 }
 stringDelimiter(sampleInput, "$");
