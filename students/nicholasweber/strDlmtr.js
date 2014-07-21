@@ -6,7 +6,7 @@ var stringDelimiter = function(stringInput, delimiter) {
   while(stringInput.indexOf(delimiter) > -1) {
     var sliceHere = stringInput.indexOf(delimiter);
     var pushThis = stringInput.slice(0, sliceHere);
-    if (pushThis != "") outputArr.push(pushThis);
+    if (pushThis !== "") outputArr.push(pushThis);
     stringInput = stringInput.slice((sliceHere + 1), stringInput.length);
   }
 
