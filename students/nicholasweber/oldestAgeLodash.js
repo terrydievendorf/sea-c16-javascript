@@ -37,6 +37,7 @@ var people = [
 
 var oldestAge = function(arr) {
   var ages = _.pluck(arr, "age");
+  //takes out all undefined entries in ages using _.where and puts them in a new array
   var onlyExisting = _.where(ages);
   return _.max(onlyExisting);
 };
