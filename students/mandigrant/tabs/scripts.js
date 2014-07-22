@@ -1,4 +1,7 @@
 $(document).ready(function () {
+	//select Episode I by default
+	$(".nav li:first").addClass('tabSelected');
+	$("#ep1").show();
 
 	$(".tab").click(function() {
 		//highlight existing tab, unhighlight the rest
@@ -12,7 +15,8 @@ $(document).ready(function () {
 		$("#ep" + episodeNum).show();
 	});
 
-	$('.plot').append($(".passcodePrompt"));
+	//$('.plot').append($(".passcodePrompt"));
+	$('.passcodePrompt').insertAfter($(".plot"));
 
 	$(".reveal").click(function() {
 		var input = $("input").val().toLowerCase();

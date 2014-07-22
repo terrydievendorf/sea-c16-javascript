@@ -73,6 +73,16 @@ ul li {
 	display:none;
 }
 
+.plot { 
+	height:100px;
+	display:block;
+}
+
+.passcodeText {
+	text-align:center;
+}
+
 .ending {
+	height:250px;
 	display:none;
 }
