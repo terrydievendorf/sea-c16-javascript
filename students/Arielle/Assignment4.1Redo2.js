@@ -5,7 +5,7 @@ var stringDelimiter = function(inputString, cut) {
 	var i = -1;
 	while (i <= inputString.length) {
 		i++;
-		if (inputString[i] !== cut && i !== input.length) {
+		if (inputString[i] !== cut && i !== inputString.length) {
 			if (!!inputString[i]) {
 				outPutString += inputString[i];
 			}
