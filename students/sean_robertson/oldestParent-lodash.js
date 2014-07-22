@@ -1,7 +1,9 @@
+// Create the cunstructor
 var People = function(array) {
     this.people = array;
 }
 
+// Alter the prototype to include methods: #oldestPerson, #livingPeople, #oldestAge
 People.prototype = {
     
     oldestPerson: function () {
@@ -10,13 +12,23 @@ People.prototype = {
     },
     
     livingPeople: function () {
-        return _.filter(this.people, 'age');
+        return _.compact(_.map(this.people, function(people) { 
+            if (!people.age) {
+                return;
+            } else {
+                return people.name;
+            }
+        }));
     },
     
-    oldestAge: function () {}
+    oldestAge: function () {
+        var living = _.filter(this.people, 'age');
+        return _.last(_.sortBy(living, 'age')).age;
+    }
     
 };
 
+// Array of people to pass in to constructor
 var people = [
     {
         name: 'Hank',
@@ -52,9 +64,5 @@ var people = [
     }
 ]
 
+// Create new People object
 group = new People(people);
-
-console.log(group.oldestPerson());
-console.log(group.livingPeople());
-
-
