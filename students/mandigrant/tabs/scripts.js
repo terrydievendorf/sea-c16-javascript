@@ -1,9 +1,15 @@
 $(document).ready(function () {
 
 	$(".tab").click(function() {
+		//highlight existing tab, unhighlight the rest
 		$(".tab").removeClass('tabSelected');
 		$(this).addClass('tabSelected');
-		$(".contents-1").show();
+		//show the div that corresponds to the selected button
+
+		$(".contents").hide();
+
+		var episodeNum = $(this).val();
+		$("#ep" + episodeNum).show();
 	});
 
 	$('.plot').append("</br></br>Enter the passcode to reveal the ending of this film.</br><input><button class='reveal'>Reveal</button>");
