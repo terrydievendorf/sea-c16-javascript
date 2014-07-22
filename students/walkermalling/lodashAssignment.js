@@ -1,15 +1,15 @@
 /**
  * Get a subset of the collection given a filter key
- * 
+ *
  * @param  collection   the colleciton of people
  * @param  filter       the desired key to filter for
  * @return [{}]         an array of people objects
  */
 var filterPeople = function(collection, filter){
-    var newCollection = _.filter(collection,function(record){
-      return !!record[filter];
+    return _.filter(collection,function(record){
+        return !!record[filter];
     });
-}
+};
 
 /**
  * Get the record of the oldest person in a collection
@@ -21,21 +21,21 @@ var oldestPerson = function(collection){
     var peopleWithAges = filterPeople(collection,'age');
 
     // find record with oldest age
-    var oldest = _.max(collection,function(record){
+    var oldest = _.max(peopleWithAges,function(record){
         return record.age;
     });
 
     return oldest;
-}
+};
 
 /**
  * return the oldest age in a collection
- * 
+ *
  */
 var oldestAge = function(collection){
    var oldest = oldestPerson(collection);
-   return oldest.age;   
-}
+   return oldest.age;
+};
 
 /**
  * return an array of the names of the living people
@@ -47,9 +47,9 @@ var livingPeople = function(collection){
 
     // get their names
     var names = _.pluck(living,'name');
-
+    
     return names;
-}
+};
 
 /**
  * return the name of the oldest person
@@ -58,4 +58,4 @@ var livingPeople = function(collection){
 var oldestLivingPerson = function(collection){
     var oldest = oldestPerson(collection);
     return oldest.name;
-}
+};
