@@ -12,7 +12,8 @@ console.log(oldestAge(people));
 
 function living(people) {
 	var alive = _.filter(people, 'age');
-	return _.pluck(alive, 'name');
+	var name = _.pluck(alive, 'name');
+	return name;
 }
 
 console.log(living(people));
