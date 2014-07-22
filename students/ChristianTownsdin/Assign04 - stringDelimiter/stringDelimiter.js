@@ -1,29 +1,29 @@
-
-
-// write a function that takes string, and breaks it down into 
+// write a function that takes a string, and breaks it down into 
 // an array of strings between the seperators
+// do not store any empty strings.
 
-//var sampleInput = 'asdf$lskd1234$asdo$$$';
-//stringDelimiter(sampleInput, '$');
+// var sampleInput = 'asdf$lskd1234$asdo$$$';
+// stringDelimiter(sampleInput, '$');
 // -> ['asdf', 'lskd1234', 'asdo']
 
+var stringDelimiter = function (inputString, delim) {
+    var resultArray = [];
+    var stringChunk = "";
 
-var stringDelimiter = function(inputString, delim){
-  
-  var resultArray = [];
-  // build up strings, 1 char at a time, and return them as a new "push()" to resultArray, everytime
-  
-  var stringChunk = "";
-  for (var i = 0; i <= inputString.length; i++){
-    // if not delim, add to stringChunk
-    if (inputString.charAt(i) !== delim){
-      stringChunk += inputString.charAt(i);
+    for (var i = 0, len = inputString.length; i < len; i++) { // only looks up len once
+        if (inputString.charAt(i) !== delim) { // it's not the delim, so...
+            stringChunk += inputString.charAt(i);
+        } else { // it is the delim, so...
+            if (stringChunk === "") {
+                continue;
+            }
+            resultArray.push(stringChunk);
+            stringChunk = "";
+        }
     }
-    // if is delim, push() current stringChunk to the output array, and then reset stringChunk = ""
-    else {
-      resultArray.push(stringChunk);
-      stringChunk = "";
-    }
-  }
-  return "Results: " + resultArray;
+    return resultArray;
 };
+
+// var sampleInput = 'asdf$lskd1234$asdo$$$';
+// console.log(stringDelimiter(sampleInput, '$'));
+// -> ["asdf", "lskd1234", "asdo"]
