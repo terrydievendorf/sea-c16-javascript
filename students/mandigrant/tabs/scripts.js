@@ -12,14 +12,16 @@ $(document).ready(function () {
 		$("#ep" + episodeNum).show();
 	});
 
-	$('.plot').append("</br></br>Enter the passcode to reveal the ending of this film.</br><input><button class='reveal'>Reveal</button>");
+	$('.plot').append($(".passcodePrompt"));
 
 	$(".reveal").click(function() {
 		var input = $("input").val().toLowerCase();
 		if (input == "jedi") {
-			$(".ending").show();
+			$(".ending").show(1000);
+			$(".passcodePrompt").hide(1000);
 		} else {
-			$("input").val("enter the passcode");
+			$(".error").html("");
+			$(".error").append("Enter the passcode.");
 		}
 	});
 
