@@ -21,4 +21,4 @@ function Person(name, pLN, age) {
 
 joe = new Person("Joe", "Blair", 26);
 joe.deadOrAlive();
-joe.hasInput();
+joe.hasInputAge();
