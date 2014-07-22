@@ -55,4 +55,4 @@ function oldestLivingPerson(dataSet) {
   haveAge = _.reject(dataSet, {'age': undefined});
   oldPerson = _.max(haveAge, function(chr) {return chr.age;});
   return oldPerson.name;
- }
+}
