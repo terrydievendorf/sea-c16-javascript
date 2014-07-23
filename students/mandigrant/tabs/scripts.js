@@ -5,7 +5,7 @@ $(document).ready(function () {
 	var episodeNum = 1;
 
 	var passcode = $("#ep1").data("passcode");
-	$("#printPasscode").html(passcode);
+	$(".printPasscode").html(passcode);
 
 	//attach the passcode prompt to each plot
 	$('.passcodePrompt').insertAfter($(".plot"));
@@ -20,7 +20,7 @@ $(document).ready(function () {
 		
 		$(".contents").hide(); //hide all the contents divs
 		$("#ep" + episodeNum).show(); //show just the selected film contents
-		$("#ep" + episodeNum).find("#printPasscode").html(passcode);
+		$("#ep" + episodeNum).find(".printPasscode").html(passcode);
 	});
 
 	//accept user passcode and reveal selected film's ending
