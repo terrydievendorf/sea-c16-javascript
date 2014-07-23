@@ -97,3 +97,8 @@ a:hover {
 	height:250px;
 	display:none;
 }
+
+.moviePoster { 
+	width:145px;
+	float:right;
+}
