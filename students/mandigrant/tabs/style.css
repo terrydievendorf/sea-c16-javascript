@@ -11,9 +11,24 @@ h1 {
 	text-align:center;
 }
 
-.error {
-	font-size:.8em;
-	color:red;
+ul { 
+	padding:0px;
+}
+
+ul li { 
+	display:inline;
+	list-style-type:none;
+	margin:5px;
+	padding:0;
+}
+
+a {
+	color:white;
+	text-decoration:none;
+}
+
+a:hover {
+	color:gray;
 }
 
 .nav { 
@@ -36,6 +51,11 @@ h1 {
 	overflow-y:scroll;
 }
 
+.error {
+	font-size:.8em;
+	color:red;
+}
+
 .tab {
 	padding:10px;
 	border-radius:8px;
@@ -53,16 +73,6 @@ h1 {
 	color:blue;
 }
 
-ul { 
-padding:0px;
-}
-ul li { 
-	display:inline;
-	list-style-type:none;
-	margin:5px;
-	padding:0;
-}
-
 .contentsContainer {
 	margin:auto;
 	width:500px;
@@ -78,8 +88,9 @@ ul li {
 	display:block;
 }
 
-.passcodeText {
+.credits {
 	text-align:center;
+	font-size:.7em;
 }
 
 .ending {
