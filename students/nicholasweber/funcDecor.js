@@ -7,13 +7,13 @@ var countDecorator = function (f) {
   var callNumber = 0;
   var wrapper = function() {
     callNumber++;
-      return f.apply(this, arguments);
+    return f.apply(this, arguments);
   };
-    
+
   wrapper.callCount = function() {
     console.log(callNumber);
   };
-    return wrapper;
+  return wrapper;
 };
 
 add = countDecorator(add);
