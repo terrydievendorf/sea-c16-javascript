@@ -20,6 +20,12 @@ a{
     font-size:1em;
     text-decoration:none;
 }
+em{
+    font-style:italic;
+    color:#777;
+    font-weight:normal;
+    font-size:.9em;
+}
 ul{
     list-style:none;
 }
@@ -167,9 +173,10 @@ div.tab-content.active{
     display:block;
     opacity:1;
 }
-
+.tab-content h3{
+    margin-top:10px;
+}
 .tab-content ol li{
     font-size:1em;
-    height:20px;
     line-height:20px;
 }

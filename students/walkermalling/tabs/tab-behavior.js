@@ -1,6 +1,6 @@
 $(function(){
 
-    var navItems = $('#nav ul li a'),
+    var navItems = $('#nav ul li a'),   // cache it all on page-load
         tabContent = $('#content .tab-content'),
         marker = $('#marker'),
         stem = $('#stem'),
@@ -8,33 +8,24 @@ $(function(){
 
     navItems.on('click',function(){
 
-        var $this = $(this),
-            target = $this.data('target');
+        var tab = $(this), 
+            target = tab.data('target');
 
         navItems
             .removeClass('active'); // reset
 
-        $this
-            .addClass('active');
+        tab
+            .addClass('active');    // activate tab
 
-        tabContent
+        tabContent                  // activate content
             .removeClass('active')
             .filter('[data-id="'+target+'"]')
                 .addClass('active');
 
-        marker
-            .css('left', $this.position().left - 4 )
-            .css('width', $this.innerWidth() )
+        marker                      // slide marker
+            .css('left', tab.position().left - parseInt(tab.css('border-right-width')) )
+            .css('width', tab.innerWidth() )
             .css('border-bottom-color' , tabContent.filter('[data-id="'+target+'"]').css('border-top-color') )
-            .css('top', $this.innerHeight() + 7 );
-
-
-
-
-
-
-
-        // stem
-        //     .css('background', tabContent.filter('[data-id="'+target+'"]').css('border-top-color') );
+            .css('top', tab.innerHeight() + 2 * parseInt(tab.css('border-top-width')) - 1 );
     });
 });
