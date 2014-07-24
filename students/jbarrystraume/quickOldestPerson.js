@@ -35,7 +35,7 @@ var people = [
 
 var max = -1;
 var maxName;
-var alive = []
+var alive = [];
 
 for (i = 0; i < people.length; i++) {
   if (people[i].age) {
