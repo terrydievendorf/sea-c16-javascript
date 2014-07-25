@@ -11,7 +11,7 @@ var countDecorator = function (f) {
   };
     
   wrapper.callCount = function() {
-    console.log(callNumber);
+    return callNumber;
   };
     return wrapper;
 };
