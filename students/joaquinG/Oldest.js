@@ -51,8 +51,6 @@ function list(people) {
     return names;
 }
 
-
-
 var names = list(people);
 
 console.log(names);
