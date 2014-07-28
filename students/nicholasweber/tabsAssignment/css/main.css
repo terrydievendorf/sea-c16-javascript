@@ -29,8 +29,6 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding:0;
-  
-
 }
 
 li {
@@ -46,7 +44,6 @@ a:link, a:visited {
 	width: 80px;
 	text-decoration: none;
 	background-color: #EB7D33;
-
 	border-bottom-left-radius: 9px;
 	border-bottom-right-radius: 9px;
 }
