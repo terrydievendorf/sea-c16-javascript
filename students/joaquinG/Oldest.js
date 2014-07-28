@@ -1,7 +1,3 @@
-// Given the following data structure
-// implement a oldestLivingParent method
-// that will return the name of the oldest
-// living parent.
 var people = [
   {
     name: 'Hank',
@@ -40,11 +36,10 @@ var people = [
 function oldestLivingParent(people) { 
   var names = [];
     for (i = 0; i < people.length; i++) {
-        if (people[i].parent && people[i].age) {
+        if (people[i].hasOwnProperty('age')) {
             names.push(people[i].name);
-            //names.push(people[i].age);
-            //names.push("|Parent " + people[i].parent + "|");
         }
+     
     }
     return names;
 }
