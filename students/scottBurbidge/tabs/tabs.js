@@ -1,3 +1,11 @@
+function clickHandler() {
+   $(this).next().addClass("image").removeClass("noImage")
+   $(this).removeClass("image").addClass("noImage")
+ }  
+function lastImage(){
+  $(".first").addClass("image").removeClass("noImage")
+  $(this).removeClass("image").addClass("noImage") 
+}
 
 
 $(document).ready(function(){
@@ -7,8 +15,11 @@ $(document).ready(function(){
     $("#in" + wind).removeClass("paneGone").addClass("paneSelect")
     })
   
-  $(".image").click(function(){
-    $(this).next().addClass("image").removeClass("noImage")
-    $(this).removeClass("image").addClass("noImage")
-     })
+  $(".clickable").click(clickHandler)
+  $(".last").click(lastImage)
+
+  
+   
+
+  
   })
