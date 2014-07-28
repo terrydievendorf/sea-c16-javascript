@@ -2,7 +2,6 @@
 // implement a oldestLivingParent method
 // that will return the name of the oldest
 // living parent.
-
 var people = [
   {
     name: 'Hank',
@@ -38,19 +37,18 @@ var people = [
   }
 ];
 
-var names = [];
+var names = oldestLivingParent(people);
 
-function list(people) {
+function oldestLivingParent(people) { 
+  var names = [];
     for (i = 0; i < people.length; i++) {
-        if (people[i].parent  && people[i].age) {      
-          names.push(people[i].name);
-          names.push(people[i].age);
+        if (people[i].parent && people[i].age) {
+            names.push(people[i].name);
+            //names.push(people[i].age);
+            //names.push("|Parent " + people[i].parent + "|");
         }
     }
-
     return names;
 }
 
-var names = list(people);
-
-console.log(names);
+console.log(oldestLivingParent(people));
