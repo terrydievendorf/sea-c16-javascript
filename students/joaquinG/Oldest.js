@@ -37,8 +37,6 @@ var people = [
   }
 ];
 
-var names = oldestLivingParent(people);
-
 function oldestLivingParent(people) { 
   var names = [];
     for (i = 0; i < people.length; i++) {
@@ -50,5 +48,4 @@ function oldestLivingParent(people) {
     }
     return names;
 }
-
 console.log(oldestLivingParent(people));
