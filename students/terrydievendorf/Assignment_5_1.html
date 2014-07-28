@@ -1,0 +1,55 @@
+<html>
+<head>
+<script src="lodash.js">
+var _ = require('lodash');
+var people = [
+  {
+    name: 'Hank',
+    age: 29,
+    parent: 'Don'
+  },
+  {
+    name: 'Deborah',
+    age: 30,
+    parent: 'Don'
+  },
+  {
+    name: 'Danny',
+    age: 24,
+    parent: 'Don'
+  },
+  {
+    name: 'Don',
+    age: 64,
+    parent: 'Haskell'
+  },
+  {
+    name: 'Kathy',
+    age: 75,
+    parent: 'Lenora'
+  },
+  {
+    name: 'Haskell',
+    parent: 'Finus'
+  },
+  {
+    name: 'Finus'
+  }
+];
+
+var getOldest = function(people) {
+  oldestPerson={};
+  for (i=0;i<people.lenth;i++) {
+    if (people[i].age>oldestPerson) {
+      oldestPerson=people[i];
+    };
+  end;
+  return oldestPerson;
+}
+
+console.log(getoldest());
+</script>
+</head>
+<body>
+</body>
+</html>
