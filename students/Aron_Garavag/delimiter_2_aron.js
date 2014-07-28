@@ -1,21 +1,13 @@
 function stringDelimiter(sampleInput, delimiter) {
-  var leadStr = '';
-  var delmtArr = [];
-  for (var i = 0; i < sampleInput.length; i++) {
-    var leadDel = sampleInput[i];
-    if (leadDel === delimiter) {
-      createArr(leadStr, delmtArr);
-      leadStr = '';
+  var leadStr = '',
+      delmtArr = [];
+  for (i = 0; i < sampleInput.length; i++) {
+    if( i !== sampleInput.length && sampleInput[i] !== delimiter) {
+      leadStr += sampleInput[i];
     } else {
-      leadStr += leadDel;
+      if (leadStr) delmtArr.push(leadStr);
+        leadStr = '';
     }
   }
-  createArr(leadStr, delmtArr);
-  return delmtArr;
-};
-
-function createArr(letters, sections) {
-  if(letters.length > 0) {
-    sections.push(letters);
-  }
+    return delmtArr;
 };
