@@ -7,8 +7,15 @@ function stringDelimiter (inputString, seperator) {
         outputArray.push(condStr);
         condStr = '';
       }
+    } else if (i === inputString.length - 1) {
+        if (condStr !== '') {
+          condStr = condStr + inputString[i];
+          outputArray.push(condStr);
+      }
     } else {
-      condStr = condStr + inputString[i];
+        if (!!inputString[i]) {
+          condStr = condStr + inputString[i];
+        }
     }
   }
   return outputArray;
