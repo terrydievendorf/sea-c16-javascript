@@ -3,10 +3,10 @@ var oldestLivingParent = function(set){
 	var oldest = {
 		age:0
 	};
-	for (var i = 0; i < set.length; i++) {
-		if( isLivingParent(set, set[i].name ) ){
-			if( set[i].age > oldest.age){
-				oldest = set[i];
+	for (var item = 0; item < set.length; item++) {
+		if( isLivingParent(set, set[item].name ) ){
+			if( set[item].age > oldest.age){
+				oldest = set[item];
 			}
 		}
 	}
@@ -15,8 +15,11 @@ var oldestLivingParent = function(set){
 };
 
 var isLivingParent = function(set,name){
-	for (var i = 0; i < set.length; i++) {
-		if( !!set[i].age && set[i].parent === name ) return true
+	var match = false,
+		item = 0;
+	while( item < set.length && !match) {
+		if( !!set[item].age && set[item].parent === name ) match = true;
+		item++;
 	}
-	return false;
+	return match;
 };
