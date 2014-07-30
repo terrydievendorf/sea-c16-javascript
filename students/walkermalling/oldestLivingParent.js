@@ -15,11 +15,11 @@ var oldestLivingParent = function(set){
 };
 
 var isLivingParent = function(set,name){
-    var match = false,
-        item = 0;
+	var match = false,
+		item = 0;
 	while( item < set.length && !match) {
 		if( !!set[item].age && set[item].parent === name ) match = true;
-        item++;
+		item++;
 	}
 	return match;
 };
