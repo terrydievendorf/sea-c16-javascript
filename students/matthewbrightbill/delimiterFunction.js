@@ -1,8 +1,8 @@
-function stringDelimiter (inputString, seperator) {
+function stringDelimiter (inputString, separator) {
   var condStr = '', outputArray = [];
 
   for (var i = 0; i < inputString.length; i++) {
-    if (inputString[i] === seperator) {
+    if (inputString[i] === separator) {
       if (condStr !== '') {
         outputArray.push(condStr);
         condStr = '';
