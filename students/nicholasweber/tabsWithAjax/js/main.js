@@ -2,7 +2,7 @@
 var _ = require('lodash');
 var hashComp = _.template()
 */
-$(document).ready
+$(document).ready;
 
 var populateTabs = function() {
   $.getJSON('http://rs.hankyates.com:3000/content', function(data) {
@@ -21,7 +21,8 @@ var populateTabs = function() {
       });
     });
   });
-}
+};
+
 populateTabs();
 
 $(window).on('hashchange', function (e) {
@@ -32,4 +33,4 @@ $(window).on('hashchange', function (e) {
 $(".refresh").on('click', function() {
   $('ul').empty();
   populateTabs();
-})
+});
