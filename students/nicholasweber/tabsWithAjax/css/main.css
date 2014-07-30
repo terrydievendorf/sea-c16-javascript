@@ -63,3 +63,10 @@ section {
   margin-top: 25px;
   clear:both;
 }
+
+.refresh {
+  text-align: center;
+  background-color: green;
+  width: 140px;
+  height: 20px;
+}
