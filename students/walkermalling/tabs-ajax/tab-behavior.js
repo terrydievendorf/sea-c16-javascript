@@ -1,15 +1,21 @@
 $(function(){
 
+    // request tabs and content
+    // pass an enclosure to hande response
     makeRequest('http://rs.hankyates.com:3000/content', 'application/json', function(response){
-        for(key in response){
-            // do something
+        var data = JSON.parse(response);
+
+        for(key in data){
+            var tab = data[key];
+
         }
+
+        // now that the dom is updated...
         setBindings();
     });
 
     function setBindings(){
 
-        console.log('trigger!');
         var navItems = $('#nav ul li a'),   // cache it all on page-load
             tabContent = $('#content .tab-content'),
             marker = $('#marker'),

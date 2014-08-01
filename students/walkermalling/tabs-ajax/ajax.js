@@ -7,8 +7,8 @@ function makeRequest(url, mimeType, fn){
     httpRequest.onSuccessHandler = fn;
     httpRequest.onreadystatechange = handleResponse;
     httpRequest.open('GET', url, true);
-    httpRequest.setRequestHeader('Content-Type', mimeType);
-    httpRequest.withCredentials = "true";
+    // httpRequest.setRequestHeader('Content-Type', mimeType);
+    // httpRequest.withCredentials = "true";
     httpRequest.send();
 }
 
