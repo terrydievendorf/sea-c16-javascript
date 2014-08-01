@@ -3,6 +3,7 @@
 <head>
 	<title>My Tabs Assigment</title>
 	<link rel="stylesheet" type="text/css" href="tabstyle.css">
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
 </head>
 
 <body>
@@ -11,23 +12,22 @@
 		<div id="tabs">
 		  <ul>
 		    <li>
-		      <a id="home" href="#" class="selected">Home</a>
+		      <button id="home" href="#" class="selected">Home</button>
 		    </li>
 		    <li>
-		      <a id="articles" href="#">Articles</a>
+		      <button id="articles" href="#">Articles</button>
 		    </li>
 		    <li>
-		      <a id="portfolio" href="#">Portfolio</a>
+		      <button id="portfolio" href="#">Portfolio</button>
 		    </li>
 		  </ul>
 		</div>
 
 		<div id="content">
-		  <p id="articles-content" class="stuff">The articles are here.</p>
+		  <p id="articles-content" class="hidden" class="stuff">The articles are here.</p>
 		  <p id="home-content" class="stuff">The home is here.</p>
-		  <p id="portfolio-content" class="stuff">The portfolio is here.</p>
+		  <p id="portfolio-content" class="hidden" class="stuff">The portfolio is here.</p>
 		</div>
 	</div>
-	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
 	<script type="text/javascript" src="tabfunction.js"></script>
 </body>
