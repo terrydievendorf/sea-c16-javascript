@@ -12,7 +12,7 @@ var populateTabs = function() {
       //FIXTHIS: check out _.template in lodash to do this
       $('ul').append('<li><a href="#' + tab.name + '">' + tab.name +'</a></li>');
       if(i==0) $("ul li a:first-child").attr('id', 'active-section');
-      $('#main-wrapper').append('<div id="' + tab.name +'">' + tab.content + '</div>')
+      $('#main-wrapper').append('<div style="display: none;" id="' + tab.name +'">' + tab.content + '</div>')
       if(i==0) $('section').html(tab.content);
       i++
       $('a').on('click', function (e) {
