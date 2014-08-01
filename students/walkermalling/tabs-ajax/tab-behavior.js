@@ -6,8 +6,26 @@ $(function(){
         var data = JSON.parse(response);
 
         for(key in data){
-            var tab = data[key];
 
+            var tab = data[key];
+            var active = key == '0' ? 'active' : '';
+
+            var li = $(document.createElement('li'));
+
+            var a = $(document.createElement('a'))
+                        .text(tab.name)
+                        .addClass(active)
+                        .attr('data-target', tab.name)
+                        .appendTo(li);
+
+            li.appendTo('#nav ul');
+
+            var ctnt = $(document.createElement('div'))
+                        .html(tab.content)
+                        .addClass('tab-content')
+                        .addClass(active)
+                        .attr('data-id', tab.name)
+                        .appendTo('#content');
         }
 
         // now that the dom is updated...
