@@ -1,16 +1,13 @@
 $(document).ready(function(){
+	
 
-	$('#articles-content').hide();
-	$('#portfolio-content').hide();
-
-	$('a').on('click', function(e) {
-	  e.preventDefault();
+	$('button').on('click', function(e) {
 	  $('.selected').removeClass('selected');
 	  $(this).addClass('selected');
-	  $('.stuff').slideUp();
+	  $('#content p').addClass('hidden');
 	    
 	  var panel = $(this).attr('id');  
-	  $('#' + panel + '-content').slideDown();  
+	  $('#' + panel + '-content').removeClass('hidden');  
 	});
 
 });
