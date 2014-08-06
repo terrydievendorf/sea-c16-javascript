@@ -1,0 +1,51 @@
+h1 {
+	color: blue;
+}
+
+.cats {
+	display: block;
+}
+
+.tabFactsSection > div {
+	display:none;
+
+
+}
+
+.catTab {
+	border-radius: 5px;
+	border: 2px solid #6495ED;
+	background-color: #BCD2EE;
+	height: 50px;
+	width: 120px;
+	margin-right: 100px;
+	text-align: center;
+	display: inline-block;
+}
+
+.currentTab {
+	background-color: yellow;
+	color: blue;
+}
+
+.catType {
+	margin-left: 50px;
+}
+
+#cuteCatPic {
+	height: 100px;
+	width: 100px;
+}
+
+#funnyCatPic {
+	height: 100px;
+	width: 100px;
+}
+
+#loafCatPic {
+	height: 100px;
+	width: 100px;
+}
+
+
+
