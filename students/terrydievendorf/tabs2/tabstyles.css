@@ -1,0 +1,9 @@
+.red {
+  color: red;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+
