@@ -40,7 +40,7 @@ getOldestAgeWithLodash = function(people) {
 }
 
 getArrayOfLivingPeopleWithLodash = function(people) {
-  return _underscore.filter(people, 'age');
+  return _underscore.pluck(_underscore.filter(people, 'age'), 'name');
 }
 
 getNameOfOldestLivingPersonWithLodash = function(people) {
