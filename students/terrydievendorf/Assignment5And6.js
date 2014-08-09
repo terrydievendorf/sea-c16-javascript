@@ -67,6 +67,16 @@ getArrayOfLivingPeopleWithoutLodash = function(people) {
   return livingPeople;
 }
 
+getArrayOfNamesForLivingPeopleWithoutLodash = function(people) {
+  livingPeople = [];
+  for (i=0;i<people.length;i++) {
+    if (people[i].age>0) {
+      livingPeople.push(people[i].name);
+    };
+  }
+  return livingPeople;
+}
+
 getNameOfOldestLivingPersonWithoutLodash = function(people) {
   oldestAge=0;
   name='';
@@ -115,3 +125,5 @@ console.log(getOldestAgeWithLodash(people));
 console.log(getArrayOfLivingPeopleWithLodash(people));
 console.log(getNameOfOldestLivingPersonWithLodash(people));
 console.log(getNameOfOldestLivingParent(people));
+//console.log(getArrayOfNamesForLivingPeopleWithoutLodash(people));
+

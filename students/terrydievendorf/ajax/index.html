@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="tabstyles.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js">
+  </script>
+  <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js">
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#btnRefresh').click(function() {
+        $("#tabs").tabs();
+        getTabs = function() {
+          var hankAPI = 'http://rs.hankyates.com:3000/content';
+          var tabs = [];
+          $.getJSON(hankAPI, function(data) {
+            $.each(data, function( tab, content) {
+              console.log(tab);
+              console.log(content);
+              tabs.push(tab);
+            });
+          });
+        };
+      getTabs();
+      });
+    });
+  </script>
+</head>
+<body>
+<button id="btnRefresh">Refresh tabs</button>
+<div id="tabs">
+  <ul>
+    <li>
+      <a href="#tabs-home">Home</a>
+    </li>
+    <li>
+      <a href="#tabs-articles">Articles</a>
+    </li>
+    <li>
+      <a href="#tabs-portfolio">Portfolio</a>
+    </li>
+  </ul>
+  <div id="tabs-home">The home is here.</div>
+  <div id="tabs-articles">The articles are here.</div>
+  <div id="tabs-portfolio">The portfolio is here.</div>
+</div>
+</body>
+</html>
